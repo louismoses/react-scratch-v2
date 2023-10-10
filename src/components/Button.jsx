@@ -13,7 +13,11 @@ const Button = (props) => {
     }
   };
   return (
-    <button type={props.type} onClick={handleClick}>
+    <button
+      type={props.type}
+      onClick={handleClick}
+      onMouseOver={props.onMouseOver}
+    >
       {props.text}
     </button>
   );

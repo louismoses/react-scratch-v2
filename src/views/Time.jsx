@@ -11,10 +11,14 @@ const Time = () => {
     const newTime = new Date().toLocaleTimeString();
     setCurrentTime(newTime);
   }
+  function handleMouseOver() {
+    console.log("mouse over");
+  }
   return (
     <div className="container">
       {currentTime}
       <Button type="submit" text="Get Time" newTime={getTime} />
+      <Button type="submit" text="Mouse Over" onMouseOver={handleMouseOver} />
     </div>
   );
 };
